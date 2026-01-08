@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Contacto - Clairo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contacta con Clairo para resolver dudas sobre los workshops de eCommerce, colaboraciones o soporte.">
+  <link rel="icon" type="image/svg+xml" href="logos/fav.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-white text-stone-950 min-h-screen">
+
+  <!-- Header global fijo -->
+  <header class="site-header">
+    <nav class="site-header-inner">
+      <div class="glass-nav">
+        <!-- Logo a la izquierda -->
+        <a href="index.html" class="nav-logo">
+          <img src="logos/Logo Clairo Academy.svg" alt="Clairo" class="h-20 w-auto brightness-0 invert">
+        </a>
+
+        <!-- Enlaces centrados -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <div class="nav-dropdown relative">
+            <a href="workshops.html" class="nav-link">Formaciones</a>
+            <div
+              class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-4 opacity-0 invisible transition-all duration-300 pointer-events-none"
+              style="margin-top: 0.75rem;">
+              <a href="workshops.html"
+                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Ver
+                todos los workshops</a>
+              <div class="border-t border-stone-200 my-2"></div>
+              <a href="workshop-convierte-tu-pasion-en-un-ecommerce.html"
+                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Convierte
+                tu pasión en un eCommerce</a>
+              <a href="proximo-workshop-clairo.html"
+                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Diseña
+                tu modelo de negocio</a>
+              <a href="workshop-disena-tu-modelo-de-negocio.html"
+                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Próximo
+                Workshop de Clairo</a>
+            </div>
+          </div>
+          <a href="sobre-clairo.html" class="nav-link">¿Quiénes somos?</a>
+          <a href="contacto.html" class="nav-link">Contáctanos</a>
+        </nav>
+
+        <!-- CTA a la derecha -->
+        <a href="contacto.html" class="nav-cta">
+          <span>CONTACTO</span>
+        </a>
+
+        <!-- Botón móvil -->
+        <button class="mobile-menu-button" aria-label="Abrir menú de navegación">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5h16M4 12h16M4 19h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menú móvil flotante -->
+  <div
+    class="mobile-menu hidden fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 rounded-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-6"
+    style="background: #5CAB94;">
+    <div class="flex flex-col gap-4">
+      <a href="index.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Home</a>
+      <a href="workshops.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Formaciones</a>
+      <a href="sobre-clairo.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">¿Quiénes
+        somos?</a>
+      <a href="casos.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Formación
+        corporativa</a>
+      <a href="contacto.html"
+        class="text-sm font-medium text-white uppercase tracking-wider py-2 px-4 rounded-full bg-white/10 hover:bg-white/20 transition-all font-sans">Contáctanos</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero / Intro -->
+    <section class="bg-gradient-to-br from-stone-50 to-white pt-32 pb-16 md:pt-36 md:pb-20">
+      <div class="container-max px-6">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-stone-950 mb-4">Hablemos de eCommerce con creatividad y
+            criterio</h1>
+          <p class="text-lg md:text-xl text-stone-600 leading-relaxed">
+            Si tienes dudas sobre nuestras formaciones,
+            representas una universidad, centro o empresa y buscas experiencias de aprendizaje grupales,
+            o tienes un proyecto de eCommerce en mente y quieres explorarlo con acompañamiento estratégico,
+            déjanos tus datos y nos pondremos en contacto contigo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario + columna derecha -->
+    <section class="py-12 md:py-16">
+      <div class="container-max px-6">
+        <div class="grid lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] gap-10 items-start max-w-5xl mx-auto">
+
+          <!-- Columna formulario -->
+          <div class="bg-white border border-stone-200 rounded-2xl p-6 md:p-8 shadow-sm">
+            <h2 class="text-2xl font-semibold text-stone-950 mb-4">Formulario de contacto</h2>
+            <p class="text-sm text-stone-600 mb-6">
+              Puedes usar este formulario para dudas sobre workshops, facturación, colaboraciones o prensa.
+            </p>
+
+            <div class="klaviyo-form-W6fWKU"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer con información de contacto -->
+  <footer class="bg-[#191E29] text-white/60 py-12">
+    <div class="container-max px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="font-semibold text-white mb-4">Contacto</h4>
+          <div class="space-y-3 text-sm">
+            <div>
+              <p class="font-semibold">Email</p>
+              <a href="mailto:contacto@clairo.es" class="text-[#5CAB94] hover:text-[#4a9a82]">
+                contacto@clairo.es
+              </a>
+            </div>
+            <div>
+              <p class="font-semibold">Teléfono</p>
+              <a href="tel:+34000000000" class="text-white hover:text-white/80">
+                +34 000 000 000
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Redes</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.instagram.com/clairo_ecommerce/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-[#5CAB94] transition-colors">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener noreferrer"
+                class="hover:text-[#5CAB94] transition-colors">TikTok</a></li>
+            <li><a href="https://www.linkedin.com/company/clairoecommerce" target="_blank" rel="noopener noreferrer"
+                class="hover:text-[#5CAB94] transition-colors">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@Clairoecommerce" target="_blank" rel="noopener noreferrer"
+                class="hover:text-[#5CAB94] transition-colors">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Legal</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/legal/aviso-legal" class="hover:text-white transition-colors">Aviso legal</a></li>
+            <li><a href="/legal/politica-de-privacidad" class="hover:text-white transition-colors">Política de
+                privacidad</a></li>
+            <li><a href="/legal/politica-de-cookies" class="hover:text-white transition-colors">Política de
+                cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="index.html" class="mb-4 block">
+            <img src="logos/Logo Clairo Academy.svg" alt="Clairo" class="h-5 w-auto brightness-0 invert">
+          </a>
+          <p class="text-sm text-white/60">
+            Workshops de eCommerce con criterio, claridad y acción.
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center text-sm">
+        <p>© 2024 Clairo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

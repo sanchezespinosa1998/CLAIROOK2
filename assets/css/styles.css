@@ -1,0 +1,1044 @@
+/* Estilos base de Clairo - Extraídos y adaptados del index.html */
+
+/* Variables CSS para Clairo */
+:root {
+  --color-primary: #132D46;
+  /* Azul oscuro principal */
+  --color-primary-dark: #191E29;
+  --color-accent: #01C38D;
+  /* Verde vibrante */
+  --color-accent-dark: #01A877;
+  --color-clairo-green: #5CAB94;
+  /* Verde Clairo principal según feedback */
+  --color-text: #191E29;
+  --color-text-light: #696E79;
+  --color-bg: #FFFFFF;
+  --color-bg-dark: #191E29;
+  --color-stone-50: #fafaf9;
+  --color-stone-100: #f5f5f4;
+  --color-stone-200: #e7e5e4;
+  --color-stone-300: #d6d3d1;
+  --color-stone-950: #191E29;
+  --color-gray: #696E79;
+  /* Variables para diseño unificado */
+  --border-radius-card: 1rem;
+  /* 16px - radio unificado para tarjetas */
+  --border-radius-button: 9999px;
+  /* rounded-full para botones */
+  --border-radius-navbar: 9999px;
+  /* rounded-full para navbar */
+  --card-transparency: rgba(255, 255, 255, 0.1);
+  /* Transparencia base para tarjetas */
+  --card-backdrop: blur(10px);
+  /* Efecto backdrop blur */
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.1);
+  /* Sombra unificada para tarjetas */
+}
+
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Material Symbols Outlined - Estilos base */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Sobrescribir la fuente de Tailwind font-sans */
+.font-sans,
+.font-sans * {
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Header global fijo para index (y futuras páginas si se reutiliza) */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 16px 0 16px;
+  pointer-events: none;
+}
+
+.site-header-inner {
+  pointer-events: auto;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Estilo base del contenedor de navegación en el header */
+.site-header .glass-nav {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background: rgba(92, 171, 148, 0.8);
+  width: 100%;
+  max-width: 1100px;
+  min-height: 60px;
+  height: 72px;
+  padding: 6px 40px;
+  border-radius: 15px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* Logo del nav */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nav-logo img {
+  height: 2.5rem;
+  width: auto;
+}
+
+/* Enlaces de navegación centrados */
+.nav-links {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+}
+
+.nav-link {
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Dropdown de navegación */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav-dropdown-menu {
+  z-index: 100;
+}
+
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  right: 0;
+  height: 0.75rem;
+  background: transparent;
+}
+
+/* CTA del nav */
+.nav-cta {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: var(--color-clairo-green);
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .nav-cta {
+    display: flex;
+  }
+}
+
+.nav-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.nav-cta svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: var(--color-clairo-green);
+}
+
+/* Botón móvil */
+.mobile-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+.mobile-menu-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08090A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+/* Selección de texto personalizada - Verde */
+::selection {
+  background-color: #5CAB94;
+  color: #191E29;
+}
+
+::-moz-selection {
+  background-color: #5CAB94;
+  color: #191E29;
+}
+
+/* Grid schematico */
+.schematic-grid {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Contenedor hero con parallax */
+.hero-container {
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Degradado verde en la base del hero apuntando hacia arriba */
+.hero-orange-gradient {
+  background: linear-gradient(to top,
+      rgba(92, 171, 148, 0.4) 0%,
+      rgba(92, 171, 148, 0.25) 30%,
+      rgba(92, 171, 148, 0.1) 60%,
+      transparent 100%);
+  z-index: 5;
+}
+
+/* Contenedor de olas ondulantes */
+.hero-waves {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  filter: blur(0.5px);
+}
+
+/* Capas de olas con diferentes animaciones */
+.wave-layer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.wave-layer svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.wave-layer-1 {
+  animation: wave-move-1 15s ease-in-out infinite;
+  z-index: 3;
+  filter: drop-shadow(0 0 20px rgba(92, 171, 148, 0.4));
+}
+
+.wave-layer-2 {
+  animation: wave-move-2 18s ease-in-out infinite;
+  z-index: 2;
+  animation-delay: -3s;
+  filter: drop-shadow(0 0 15px rgba(92, 171, 148, 0.3));
+}
+
+.wave-layer-3 {
+  animation: wave-move-3 20s ease-in-out infinite;
+  z-index: 1;
+  animation-delay: -6s;
+  filter: drop-shadow(0 0 10px rgba(92, 171, 148, 0.2));
+}
+
+/* Animaciones de movimiento de las olas - efecto ondulante suave */
+@keyframes wave-move-1 {
+  0% {
+    transform: translateX(-50%) translateY(0) scaleX(1);
+  }
+
+  25% {
+    transform: translateX(calc(-50% - 30px)) translateY(8px) scaleX(1.02);
+  }
+
+  50% {
+    transform: translateX(calc(-50% - 60px)) translateY(0) scaleX(1);
+  }
+
+  75% {
+    transform: translateX(calc(-50% - 30px)) translateY(-8px) scaleX(0.98);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0) scaleX(1);
+  }
+}
+
+@keyframes wave-move-2 {
+  0% {
+    transform: translateX(-50%) translateY(0) scaleX(1);
+  }
+
+  25% {
+    transform: translateX(calc(-50% + 40px)) translateY(-6px) scaleX(0.98);
+  }
+
+  50% {
+    transform: translateX(calc(-50% + 80px)) translateY(0) scaleX(1);
+  }
+
+  75% {
+    transform: translateX(calc(-50% + 40px)) translateY(6px) scaleX(1.02);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0) scaleX(1);
+  }
+}
+
+@keyframes wave-move-3 {
+  0% {
+    transform: translateX(-50%) translateY(0) scaleX(1);
+  }
+
+  25% {
+    transform: translateX(calc(-50% - 20px)) translateY(5px) scaleX(1.01);
+  }
+
+  50% {
+    transform: translateX(calc(-50% - 40px)) translateY(0) scaleX(1);
+  }
+
+  75% {
+    transform: translateX(calc(-50% - 20px)) translateY(-5px) scaleX(0.99);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0) scaleX(1);
+  }
+}
+
+/* Sección con líneas verticales */
+.section-lines {
+  position: relative;
+}
+
+.section-lines::before,
+.section-lines::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+}
+
+/* Estilos para tarjetas */
+.card-workshop {
+  transition: all 0.3s ease;
+  border: 1px solid var(--color-stone-200);
+  border-radius: var(--border-radius-card);
+}
+
+.card-workshop:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+/* Tarjetas transparentes para diseño unificado - Glass effect */
+.card-transparent {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+/* Glass effect mejorado para la sección de propuesta de valor */
+.card-glass-section {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--border-radius-card);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.card-glass-section:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.card-text-section {
+  color: rgba(25, 30, 41, 0.9);
+  font-weight: 400;
+}
+
+/* Efecto glass para tarjetas de workshops */
+.card-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: none;
+  border-radius: var(--border-radius-card);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 0 0 4px rgba(255, 255, 255, 1);
+  transition: all 0.3s ease;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(25, 30, 41, 0.1);
+  z-index: 0;
+}
+
+.card-glass::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(25, 30, 41, 0.95) 0%, rgba(25, 30, 41, 0.8) 40%, rgba(25, 30, 41, 0.4) 70%, transparent 100%);
+  z-index: 0;
+}
+
+.card-glass > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Badges informativos para tarjetas */
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+}
+
+.card-badge .material-symbols-outlined {
+  font-size: 0.875rem;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.card-glass:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+}
+
+/* Chips con iconos Material Symbols */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  background: rgba(92, 171, 148, 0.1);
+  border: 1px solid rgba(92, 171, 148, 0.3);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: var(--color-clairo-green);
+  white-space: nowrap;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.chip .material-symbols-outlined {
+  font-size: 1rem;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Chips en tarjetas transparentes (fondo claro) */
+.card-transparent .chip {
+  background: rgba(92, 171, 148, 0.1);
+  border-color: rgba(92, 171, 148, 0.3);
+  color: #5CAB94;
+}
+
+/* Estilos para botones CTA */
+.btn-primary {
+  background-color: var(--color-clairo-green);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-button);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #4a9a82;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(92, 171, 148, 0.3);
+}
+
+.btn-primary.btn-radius-match {
+  border-radius: 0.5rem;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid var(--color-stone-300);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-stone-50);
+  border-color: var(--color-stone-950);
+}
+
+/* Estilos para formularios */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-stone-300);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+  background-color: var(--color-bg);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--color-clairo-green);
+  box-shadow: 0 0 0 3px rgba(92, 171, 148, 0.1);
+}
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23191E29' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.5rem;
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Estilos para acordeón FAQ */
+.faq-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: var(--card-backdrop);
+  -webkit-backdrop-filter: var(--card-backdrop);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-card);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* FAQ en fondo claro (blanco) */
+.bg-white .faq-item {
+  background: rgba(92, 171, 148, 0.05);
+  border: 1px solid rgba(92, 171, 148, 0.2);
+}
+
+.faq-item:hover {
+  border-color: var(--color-clairo-green);
+  box-shadow: var(--shadow-card);
+}
+
+.faq-question {
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  color: var(--color-text);
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.faq-question:hover {
+  color: var(--color-clairo-green);
+}
+
+.faq-question .material-symbols-outlined {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  color: var(--color-clairo-green);
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-question .material-symbols-outlined {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-top: 0;
+}
+
+.faq-answer.active {
+  max-height: 500px;
+  padding-top: 1rem;
+}
+
+/* Utilidades de espaciado */
+.section-padding {
+  padding: 4rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 2rem;
+  }
+}
+
+/* Container máximo */
+.container-max {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Degradado radial oscuro con toque verde desde esquina */
+.bg-dark-radial-gradient {
+  background-color: #191E29 !important;
+  background-image: radial-gradient(ellipse at top left, rgba(92, 171, 148, 0.12) 0%, rgba(92, 171, 148, 0.06) 40%, rgba(92, 171, 148, 0.025) 60%, transparent 80%) !important;
+}
+
+.bg-dark-radial-gradient-top {
+  background-color: #191E29 !important;
+  background-image: radial-gradient(ellipse at top right, rgba(92, 171, 148, 0.12) 0%, rgba(92, 171, 148, 0.06) 40%, rgba(92, 171, 148, 0.025) 60%, transparent 80%) !important;
+}
+
+.bg-dark-radial-gradient-bottom {
+  background-color: #191E29 !important;
+  background-image: radial-gradient(ellipse at bottom left, rgba(92, 171, 148, 0.12) 0%, rgba(92, 171, 148, 0.06) 40%, rgba(92, 171, 148, 0.025) 60%, transparent 80%) !important;
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-orange {
+  color: var(--color-primary);
+}
+
+/* Efecto de láser verde sobre el badge del hero */
+.hero-badge {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(92, 171, 148, 0.6),
+      rgba(92, 171, 148, 0.8),
+      rgba(92, 171, 148, 0.6),
+      transparent);
+  background-size: 200% 100%;
+  animation: laser-scan 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(92, 171, 148, 0.5),
+    0 0 40px rgba(92, 171, 148, 0.3),
+    inset 0 0 10px rgba(92, 171, 148, 0.2);
+}
+
+@keyframes laser-scan {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* Carrusel de reviews */
+.reviews-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.review-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.reviews-carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.carousel-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background: var(--color-clairo-green);
+  width: 1.5rem;
+  border-radius: 9999px;
+}
+
+.carousel-dot:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-dot.active:hover {
+  background: var(--color-clairo-green);
+}
+
+/* Hero H1 con esquinado inferior */
+.hero-h1-cut {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.hero-h1-cut::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 0.375rem;
+  background: var(--color-clairo-green);
+  border-radius: 0 0 0.5rem 0;
+  clip-path: polygon(0 0, calc(100% - 1.5rem) 0, 100% 100%, 0 100%);
+}
+
+/* Estilos para formulario Klaviyo - Consistente con el diseño de Clairo */
+.klaviyo-form-Ygp7gZ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.klaviyo-form-Ygp7gZ form {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Contenedores del formulario */
+.klaviyo-form-Ygp7gZ .klaviyo-form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.klaviyo-form-Ygp7gZ .klaviyo-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Labels del formulario */
+.klaviyo-form-Ygp7gZ label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--color-text);
+  font-size: 0.875rem;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Inputs del formulario */
+.klaviyo-form-Ygp7gZ input[type="email"],
+.klaviyo-form-Ygp7gZ input[type="text"],
+.klaviyo-form-Ygp7gZ input[type="tel"],
+.klaviyo-form-Ygp7gZ input[type="number"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-stone-300);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.klaviyo-form-Ygp7gZ input[type="email"]:focus,
+.klaviyo-form-Ygp7gZ input[type="text"]:focus,
+.klaviyo-form-Ygp7gZ input[type="tel"]:focus,
+.klaviyo-form-Ygp7gZ input[type="number"]:focus {
+  outline: none;
+  border-color: var(--color-clairo-green);
+  box-shadow: 0 0 0 3px rgba(92, 171, 148, 0.1);
+}
+
+.klaviyo-form-Ygp7gZ input[type="email"]::placeholder,
+.klaviyo-form-Ygp7gZ input[type="text"]::placeholder,
+.klaviyo-form-Ygp7gZ input[type="tel"]::placeholder {
+  color: var(--color-text-light);
+  opacity: 0.6;
+}
+
+/* Botón de envío */
+.klaviyo-form-Ygp7gZ button[type="submit"],
+.klaviyo-form-Ygp7gZ .klaviyo-form-actions button,
+.klaviyo-form-Ygp7gZ input[type="submit"] {
+  background-color: var(--color-clairo-green);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.klaviyo-form-Ygp7gZ button[type="submit"]:hover,
+.klaviyo-form-Ygp7gZ .klaviyo-form-actions button:hover,
+.klaviyo-form-Ygp7gZ input[type="submit"]:hover {
+  background-color: #4a9a82;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(92, 171, 148, 0.3);
+}
+
+.klaviyo-form-Ygp7gZ button[type="submit"]:active,
+.klaviyo-form-Ygp7gZ .klaviyo-form-actions button:active,
+.klaviyo-form-Ygp7gZ input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Mensajes de error y éxito */
+.klaviyo-form-Ygp7gZ .klaviyo-form-error,
+.klaviyo-form-Ygp7gZ .klaviyo-form-message {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.klaviyo-form-Ygp7gZ .klaviyo-form-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #dc2626;
+}
+
+.klaviyo-form-Ygp7gZ .klaviyo-form-message {
+  background-color: rgba(92, 171, 148, 0.1);
+  border: 1px solid rgba(92, 171, 148, 0.3);
+  color: var(--color-clairo-green);
+}
+
+/* Checkbox y radio buttons */
+.klaviyo-form-Ygp7gZ input[type="checkbox"],
+.klaviyo-form-Ygp7gZ input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+  accent-color: var(--color-clairo-green);
+}
+
+.klaviyo-form-Ygp7gZ .klaviyo-form-checkbox-group,
+.klaviyo-form-Ygp7gZ .klaviyo-form-radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+/* Texto de ayuda y descripción */
+.klaviyo-form-Ygp7gZ .klaviyo-form-help-text,
+.klaviyo-form-Ygp7gZ .klaviyo-form-description {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Responsive - Layout horizontal en pantallas grandes si hay múltiples campos */
+@media (min-width: 768px) {
+  .klaviyo-form-Ygp7gZ .klaviyo-form-row {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .klaviyo-form-Ygp7gZ .klaviyo-form-group {
+    flex: 1;
+  }
+  
+  .klaviyo-form-Ygp7gZ button[type="submit"],
+  .klaviyo-form-Ygp7gZ .klaviyo-form-actions button,
+  .klaviyo-form-Ygp7gZ input[type="submit"] {
+    width: auto;
+    min-width: 200px;
+  }
+}
