@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formación Corporativa - Clairo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Programas de formación corporativa especializados en eCommerce y transformación digital. Soluciones a medida para empresas que buscan escalar sus operaciones digitales.">
+    <meta name="keywords"
+        content="formación corporativa, ecommerce empresarial, transformación digital, clairo, programas empresariales, training corporativo">
+    <link rel="icon" type="image/svg+xml" href="logos/fav.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-white text-stone-950 min-h-screen">
+
+    <!-- Header global fijo -->
+    <header class="site-header">
+        <nav class="site-header-inner">
+            <div class="glass-nav">
+                <!-- Logo a la izquierda -->
+                <a href="index.html" class="nav-logo">
+                    <img src="logos/Logo Clairo Academy.svg" alt="Clairo" class="h-20 w-auto brightness-0 invert">
+                </a>
+
+                <!-- Enlaces centrados -->
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="workshops.html" class="nav-link">Formaciones</a>
+                    <a href="sobre-clairo.html" class="nav-link">¿Quiénes somos?</a>
+                    <a href="contacto.html" class="nav-link">Contáctanos</a>
+                </nav>
+
+                <!-- Botón móvil -->
+                <button class="mobile-menu-button" aria-label="Abrir menú de navegación">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 5h16M4 12h16M4 19h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menú móvil flotante -->
+    <div class="mobile-menu hidden fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 rounded-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-6"
+        style="background: #5CAB94;">
+        <div class="flex flex-col gap-4">
+            <a href="index.html"
+                class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Home</a>
+            <a href="workshops.html"
+                class="text-sm font-medium text-white uppercase tracking-wider py-2 px-4 rounded-full bg-white/10 hover:bg-white/20 transition-all font-sans">Formaciones</a>
+            <a href="sobre-clairo.html"
+                class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">¿Quiénes
+                somos?</a>
+            <a href="formacion-corporativa.html"
+                class="text-sm font-medium text-white uppercase tracking-wider py-2 px-4 rounded-full bg-white/10 hover:bg-white/20 transition-all font-sans">Formación
+                corporativa</a>
+            <a href="contacto.html"
+                class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Contáctanos</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero idéntico a workshops.html -->
+        <section class="relative overflow-hidden pt-36 pb-20" style="background-color: #191E29;">
+            <div class="container-max px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center justify-items-center">
+                    <!-- Columna izquierda: Texto -->
+                    <div class="space-y-6 w-full">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                            Explora la formación <span class="text-[#5CAB94]">corporativa</span> que tenemos para ti
+                        </h1>
+
+                        <p class="text-lg md:text-xl text-white/70 leading-relaxed">
+                            Transforma tu equipo con programas de formación especializados en eCommerce, estrategia
+                            digital y liderazgo empresarial.
+                        </p>
+
+                        <div class="flex flex-wrap gap-3 pt-4">
+                            <a href="#programas"
+                                class="bg-[#5CAB94] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center gap-2 text-sm">
+                                Ver programas corporativos
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha: Imagen -->
+                    <div class="w-full flex justify-center">
+                        <img src="img/corporativo-hero.jpg" alt="Formación Corporativa Clairo"
+                            class="max-w-sm w-full h-auto rounded-2xl object-cover aspect-[3/4]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separador visual -->
+        <section class="py-16 bg-white">
+            <div class="container-max px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-stone-300 to-transparent mx-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contenido secundaria (layout gris) -->
+        <section class="section-padding bg-stone-50">
+            <div class="container-max px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-4">
+                            Cómo trabajamos con <span class="text-[#5CAB94]">empresas</span>
+                        </h2>
+                        <p class="text-lg text-stone-600 max-w-2xl mx-auto">
+                            Nuestra metodología corporativa combina transformación digital, formación práctica y
+                            estrategia personalizada para potenciar equipos
+                        </p>
+                    </div>
+
+                    <!-- Layout de filas: imagen cuadrada + tarjeta rectangular -->
+                    <div class="w-full">
+                        <!-- Primera fila -->
+                        <div class="grid grid-cols-3 gap-8 items-center mb-8">
+                            <!-- Imagen cuadrada -->
+                            <div class="col-span-1">
+                                <div class="bg-stone-800 rounded-2xl aspect-square flex items-center justify-center">
+                                    <div class="text-center">
+                                        <span class="material-symbols-outlined text-6xl text-[#5CAB94] block"
+                                            style="font-family: 'Material Symbols Outlined' !important;">business</span>
+                                        <h3 class="text-lg font-semibold text-white mt-2">Transformación Digital</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta de texto rectangular (doble ancho) -->
+                            <div class="col-span-2">
+                                <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm h-full">
+                                    <h3 class="text-2xl font-bold text-stone-950 mb-4">Programas de transformación</h3>
+                                    <p class="text-stone-600 leading-relaxed mb-6">
+                                        Diseñamos e implementamos estrategias digitales completas, desde la evaluación
+                                        inicial hasta la ejecución y medición de resultados.
+                                    </p>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#5CAB94]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">Diagnóstico digital completo</span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#5CAB94]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">Roadmap de implementación</span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#5CAB94]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">KPIs y métricas de éxito</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a href="#contacto-corporativo"
+                                            class="text-[#5CAB94] font-semibold hover:text-[#4a9a82] transition-colors inline-flex items-center gap-2">
+                                            Solicitar diagnóstico gratuito
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-family: 'Material Symbols Outlined' !important;">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Segunda fila -->
+                        <div class="grid grid-cols-3 gap-8 items-center mb-8">
+                            <!-- Imagen cuadrada -->
+                            <div class="col-span-1">
+                                <div class="bg-stone-800 rounded-2xl aspect-square flex items-center justify-center">
+                                    <div class="text-center">
+                                        <span class="material-symbols-outlined text-6xl text-[#93C5FD] block"
+                                            style="font-family: 'Material Symbols Outlined' !important;">groups</span>
+                                        <h3 class="text-lg font-semibold text-white mt-2">Formación de Equipos</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta de texto rectangular (doble ancho) -->
+                            <div class="col-span-2">
+                                <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm h-full">
+                                    <h3 class="text-2xl font-bold text-stone-950 mb-4">Capacitación especializada</h3>
+                                    <p class="text-stone-600 leading-relaxed mb-6">
+                                        Programas de formación a medida para desarrollar competencias específicas en
+                                        eCommerce, marketing digital y análisis de datos.
+                                    </p>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#93C5FD]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">Workshops prácticos y personalizados</span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#93C5FD]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">Mentoría continua y seguimiento</span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#93C5FD]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">Certificación y evaluación de resultados</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a href="#contacto-corporativo"
+                                            class="text-[#93C5FD] font-semibold hover:text-[#7ba7f7] transition-colors inline-flex items-center gap-2">
+                                            Descubrir programas disponibles
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-family: 'Material Symbols Outlined' !important;">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tercera fila -->
+                        <div class="grid grid-cols-3 gap-8 items-center">
+                            <!-- Imagen cuadrada -->
+                            <div class="col-span-1">
+                                <div class="bg-stone-800 rounded-2xl aspect-square flex items-center justify-center">
+                                    <div class="text-center">
+                                        <span class="material-symbols-outlined text-6xl text-[#FB923C] block"
+                                            style="font-family: 'Material Symbols Outlined' !important;">trending_up</span>
+                                        <h3 class="text-lg font-semibold text-white mt-2">Consultoría Estratégica</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta de texto rectangular (doble ancho) -->
+                            <div class="col-span-2">
+                                <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm h-full">
+                                    <h3 class="text-2xl font-bold text-stone-950 mb-4">Asesoramiento personalizado</h3>
+                                    <p class="text-stone-600 leading-relaxed mb-6">
+                                        Acompañamiento estratégico para optimizar procesos, identificar oportunidades y
+                                        desarrollar planes de crecimiento sostenibles.
+                                    </p>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#FB923C]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">Análisis de mercado y competencia</span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#FB923C]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">Optimización de procesos digitales</span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-[#FB923C]"
+                                                style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                                            <span class="text-stone-700">Estrategias de crecimiento escalable</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a href="#contacto-corporativo"
+                                            class="text-[#FB923C] font-semibold hover:text-[#ea9a5c] transition-colors inline-flex items-center gap-2">
+                                            Agendar sesión estratégica
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-family: 'Material Symbols Outlined' !important;">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA final -->
+        <section id="contacto-corporativo" class="section-padding bg-dark-radial-gradient text-white">
+            <div class="container-max px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        ¿Listo para transformar tu <span class="text-[#5CAB94]">equipo</span>?
+                    </h2>
+                    <p class="text-xl text-white/80 mb-8 leading-relaxed">
+                        Hablemos de cómo podemos potenciar tu organización con programas de formación corporativa
+                        personalizados.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="contacto.html"
+                            class="bg-[#5CAB94] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base"
+                                style="font-family: 'Material Symbols Outlined' !important;">mail</span>
+                            Contactar ahora
+                        </a>
+                        <a href="mailto:carlos.gonzalez@clairo.es"
+                            class="px-8 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all inline-flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base"
+                                style="font-family: 'Material Symbols Outlined' !important;">email</span>
+                            Enviar correo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#191E29] text-white/60 py-12 border-t border-white/10">
+        <div class="container-max px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="mb-4 block">
+                        <img src="logos/Logo Clairo Academy.svg" alt="Clairo" class="h-5 w-auto brightness-0 invert">
+                    </a>
+                    <p class="text-sm text-white/60">
+                        Aprende eCommerce con propósito, creatividad y sin prisa.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/legal/aviso-legal" class="hover:text-white transition-colors">Aviso legal</a></li>
+                        <li><a href="/legal/politica-de-privacidad" class="hover:text-white transition-colors">Política
+                                de
+                                privacidad</a></li>
+                        <li><a href="/legal/politica-de-cookies" class="hover:text-white transition-colors">Política de
+                                cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Redes</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://www.instagram.com/clairo_ecommerce/" target="_blank"
+                                rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-white transition-colors">TikTok</a></li>
+                        <li><a href="https://www.linkedin.com/company/clairoecommerce" target="_blank"
+                                rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/@Clairoecommerce" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-white transition-colors">YouTube</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contacto</h4>
+                    <div class="space-y-3">
+                        <a href="contacto.html"
+                            class="bg-[#5CAB94] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center justify-center gap-2 w-full text-sm">
+                            <span class="material-symbols-outlined text-base"
+                                style="font-family: 'Material Symbols Outlined' !important;">mail</span>
+                            Contáctanos
+                        </a>
+                        <a href="mailto:carlos.gonzalez@clairo.es"
+                            class="px-6 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 w-full text-sm">
+                            <span class="material-symbols-outlined text-base"
+                                style="font-family: 'Material Symbols Outlined' !important;">email</span>
+                            carlos.gonzalez@clairo.es
+                        </a>
+                        <a href="tel:+34625135358"
+                            class="px-6 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 w-full text-sm">
+                            <span class="material-symbols-outlined text-base"
+                                style="font-family: 'Material Symbols Outlined' !important;">phone</span>
+                            +34 625 136 358
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-sm">
+                <p>© 2024 Clairo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <!-- Klaviyo -->
+    <script async type='text/javascript'
+        src='https://static.klaviyo.com/onsite/js/Ym5maE/klaviyo.js?company_id=Ym5maE'></script>
+    <script type="text/javascript">
+        //Initialize Klaviyo object on page load
+        !function () { if (!window.klaviyo) { window._klOnsite = window._klOnsite || []; try { window.klaviyo = new Proxy({}, { get: function (n, i) { return "push" === i ? function () { var n; (n = window._klOnsite).push.apply(n, arguments) } : function () { for (var n = arguments.length, o = new Array(n), w = 0; w < n; w++)o[w] = arguments[w]; var t = "function" == typeof o[o.length - 1] ? o.pop() : void 0, e = new Promise((function (n) { window._klOnsite.push([i].concat(o, [function (i) { t && t(i), n(i) }])) })); return e } } }) } catch (n) { window.klaviyo = window.klaviyo || [], window.klaviyo.push = function () { var n; (n = window._klOnsite).push.apply(n, arguments) } } } }();
+    </script>
+</body>
+
+</html>

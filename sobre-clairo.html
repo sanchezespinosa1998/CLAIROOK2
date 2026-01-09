@@ -27,34 +27,10 @@
         <!-- Enlaces centrados -->
         <nav class="nav-links">
           <a href="index.html" class="nav-link">Home</a>
-          <div class="nav-dropdown relative">
-            <a href="workshops.html" class="nav-link">Formaciones</a>
-            <div
-              class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-4 opacity-0 invisible transition-all duration-300 pointer-events-none"
-              style="margin-top: 0.75rem;">
-              <a href="workshops.html"
-                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Ver
-                todos los workshops</a>
-              <div class="border-t border-stone-200 my-2"></div>
-              <a href="workshop-convierte-tu-pasion-en-un-ecommerce.html"
-                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Convierte
-                tu pasión en un eCommerce</a>
-              <a href="proximo-workshop-clairo.html"
-                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Diseña
-                tu modelo de negocio</a>
-              <a href="workshop-disena-tu-modelo-de-negocio.html"
-                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Próximo
-                Workshop de Clairo</a>
-            </div>
-          </div>
+          <a href="workshops.html" class="nav-link">Formaciones</a>
           <a href="sobre-clairo.html" class="nav-link">¿Quiénes somos?</a>
-          <a href="contacto.html" class="nav-link">Contáctanos</a>
-        </nav>
 
-        <!-- CTA a la derecha -->
-        <a href="contacto.html" class="nav-cta">
-          <span>CONTACTO</span>
-        </a>
+        </nav>
 
         <!-- Botón móvil -->
         <button class="mobile-menu-button" aria-label="Abrir menú de navegación">
@@ -88,141 +64,306 @@
   </div>
 
   <main>
-    <!-- Hero -->
-    <section class="relative overflow-hidden bg-dark-radial-gradient pt-36 pb-20">
-      <div class="absolute inset-0 pointer-events-none opacity-40">
-        <div class="schematic-grid w-full h-full"></div>
-      </div>
-
-      <div class="container-max px-6 relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-          <!-- Contenido centrado -->
-          <div class="space-y-6">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Qué es <span class="text-[#5CAB94]">Clairo</span>
-            </h1>
-
-            <p class="text-lg md:text-xl text-white/70 leading-relaxed mb-6">
-              Somos una startup que nació al entender que en el eCommerce no se fracasa por falta de ganas, sino por
-              construir sin bases sólidas.
-            </p>
-
-            <p class="text-lg md:text-xl text-white/70 leading-relaxed mb-6">
-              Por eso ofrecemos servicios, herramientas y formaciones enfocadas en lo más importante del eCommerce:
-              aprender a ofrecer valor real al mercado y construir proyectos con propósito y creatividad.
-            </p>
-
-            <p class="text-lg md:text-xl text-white/70 leading-relaxed">
-              Nuestra misión es desbloquear una nueva generación de emprendedores creativos y visionarios de España y
-              Latinoamérica que quieren
-              crear ingresos de manera inteligente, sin caer en gurús ni fórmulas vacías.
-
-            </p>
-
-            <div class="flex flex-wrap gap-3 pt-4 justify-center">
-              <a href="workshops.html"
-                class="bg-[#5CAB94] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center gap-2 text-sm">
-                Ver formaciones
-              </a>
-              <a href="contacto.html"
-                class="px-6 py-3 rounded-full border border-white/20 text-sm font-semibold text-white/80 hover:bg-white/10 transition-all inline-flex items-center gap-2">
-                Contáctanos
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Áreas de trabajo -->
-    <section class="py-16">
+    <!-- Sección Hero / About (bloque principal) -->
+    <section class="section-padding bg-white mt-12">
       <div class="container-max px-6">
-        <div class="max-w-4xl mx-auto">
-          <p class="text-xl text-stone-600 mb-8 leading-relaxed">
-            Cómo trabajamos en Clairo:
-          </p>
-          <div class="space-y-8">
-            <div class="bg-stone-50 rounded-2xl p-8 border border-stone-200">
-              <h2 class="text-2xl md:text-3xl font-bold mb-4 text-stone-950">Clairo Academy</h2>
-              <p class="text-lg text-stone-700 leading-relaxed mb-6">
-                Formaciones con metodologías creativas y aprendizaje práctico, donde combinamos el criterio humano con
-                herramientas de inteligencia artificial, tanto en formatos online como presenciales
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Columna izquierda (texto) -->
+            <div class="space-y-6">
+              <p class="text-sm uppercase tracking-[0.2em] text-[#5CAB94] font-semibold">
+                How it started
               </p>
-              <div class="mt-6">
-                <h3 class="text-lg font-semibold text-stone-900 mb-3">Programas en donde nos hemos formado:</h3>
-                <div class="flex flex-wrap gap-3">
-                  <span
-                    class="bg-white px-4 py-2 rounded-full border border-stone-300 text-sm font-medium text-stone-700">Wayra</span>
-                  <span
-                    class="bg-white px-4 py-2 rounded-full border border-stone-300 text-sm font-medium text-stone-700">Madrid
-                    Innovation</span>
-                  <span
-                    class="bg-white px-4 py-2 rounded-full border border-stone-300 text-sm font-medium text-stone-700">iLAB</span>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-950 leading-tight">
+                Creamos un espacio<br>
+                para <span class="text-[#5CAB94]">emprender</span><br>
+                con intención
+              </h1>
+              <p class="text-lg text-stone-600 leading-relaxed">
+                Somos una startup que nació al entender que en el eCommerce no se fracasa por falta de ganas, sino por
+                construir sin bases sólidas.
+              </p>
+              <p class="text-lg text-stone-600 leading-relaxed">
+                Por eso ofrecemos servicios, herramientas y formaciones enfocadas en lo más importante del eCommerce:
+                aprender a ofrecer valor real al mercado y construir proyectos con propósito y creatividad.
+              </p>
+              <p class="text-lg text-stone-600 leading-relaxed">
+                Nuestra misión es desbloquear una nueva generación de emprendedores creativos y visionarios de España y
+                Latinoamérica que quieren crear ingresos de manera inteligente, sin caer en gurús ni fórmulas vacías.
+              </p>
+            </div>
+
+            <!-- Columna derecha (visual) -->
+            <div class="space-y-6">
+              <!-- Tarjeta principal con imagen -->
+              <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-200">
+                <img src="img/team-working.jpg" alt="Equipo Clairo trabajando juntos" class="w-full h-64 object-cover">
+
+                <!-- Sub-tarjeta de métricas -->
+                <div class="p-6 bg-white">
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center">
+                      <div class="text-3xl font-bold text-[#5CAB94] mb-1">500+</div>
+                      <div class="text-sm text-stone-600">Emprendedores formados</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-3xl font-bold text-[#93C5FD] mb-1">12</div>
+                      <div class="text-sm text-stone-600">Países</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-3xl font-bold text-[#FB923C] mb-1">95%</div>
+                      <div class="text-sm text-stone-600">Satisfacción</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-3xl font-bold text-[#A855F7] mb-1">3</div>
+                      <div class="text-sm text-stone-600">Años de experiencia</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="bg-stone-50 rounded-2xl p-8 border border-stone-200">
-              <h2 class="text-2xl md:text-3xl font-bold mb-4 text-stone-950">Consultoría boutique</h2>
-              <p class="text-lg text-stone-700 leading-relaxed">
-                Diseñamos la estrategia y acompañamos la construcción de proyectos cuidadosamente seleccionados
-                aplicando nuestra metodología Creative eCommerce Consulting y fusionamos las mejores prácticas del
-                ecosistema startup con el mundo del eCommerce.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Separador visual -->
+    <section class="py-16 bg-white">
+      <div class="container-max px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-stone-300 to-transparent mx-auto"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banda con programas en donde nos hemos formado -->
+    <section class="section-padding bg-stone-50">
+      <div class="container-max px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-4">
+              Programas en donde nos hemos <span class="text-[#5CAB94]">formado</span>
+            </h2>
+            <p class="text-lg text-stone-600 max-w-2xl mx-auto">
+              Hemos participado en los mejores programas de innovación y emprendimiento para ofrecer la máxima calidad
+              en nuestros servicios
+            </p>
+          </div>
+
+          <!-- 3 espacios para imágenes + logos adicionales -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <!-- Espacio 1 -->
+            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm text-center">
+              <div class="w-24 h-24 bg-stone-100 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <span class="material-symbols-outlined text-4xl text-[#5CAB94]"
+                  style="font-family: 'Material Symbols Outlined' !important;">business</span>
+              </div>
+              <h3 class="text-xl font-bold text-stone-950 mb-3">Wayra</h3>
+              <p class="text-stone-600 leading-relaxed">
+                Programa de aceleración de startups de Telefónica, uno de los más prestigiosos a nivel europeo.
               </p>
+            </div>
+
+            <!-- Espacio 2 -->
+            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm text-center">
+              <div class="w-24 h-24 bg-stone-100 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <span class="material-symbols-outlined text-4xl text-[#93C5FD]"
+                  style="font-family: 'Material Symbols Outlined' !important;">location_city</span>
+              </div>
+              <h3 class="text-xl font-bold text-stone-950 mb-3">Madrid Innovation</h3>
+              <p class="text-stone-600 leading-relaxed">
+                Hub de innovación del Ayuntamiento de Madrid, conectando emprendedores con el ecosistema local.
+              </p>
+            </div>
+
+            <!-- Espacio 3 -->
+            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm text-center">
+              <div class="w-24 h-24 bg-stone-100 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <span class="material-symbols-outlined text-4xl text-[#FB923C]"
+                  style="font-family: 'Material Symbols Outlined' !important;">science</span>
+              </div>
+              <h3 class="text-xl font-bold text-stone-950 mb-3">iLAB</h3>
+              <p class="text-stone-600 leading-relaxed">
+                Laboratorio de innovación empresarial, especializado en transformación digital y nuevos modelos de
+                negocio.
+              </p>
+            </div>
+          </div>
+
+          <!-- Logos adicionales integrados -->
+          <div class="text-center">
+            <p class="text-sm text-stone-600 mb-6">También certificados en:</p>
+            <div class="flex flex-wrap justify-center gap-8 items-center">
+              <!-- Google -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-xl text-stone-600"
+                  style="font-family: 'Material Symbols Outlined' !important;">workspace_premium</span>
+                <span class="text-sm font-medium text-stone-700">Google</span>
+              </div>
+
+              <!-- Meta -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-xl text-stone-600"
+                  style="font-family: 'Material Symbols Outlined' !important;">verified</span>
+                <span class="text-sm font-medium text-stone-700">Meta</span>
+              </div>
+
+              <!-- HubSpot -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-xl text-stone-600"
+                  style="font-family: 'Material Symbols Outlined' !important;">school</span>
+                <span class="text-sm font-medium text-stone-700">HubSpot</span>
+              </div>
+
+              <!-- Shopify -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-xl text-stone-600"
+                  style="font-family: 'Material Symbols Outlined' !important;">analytics</span>
+                <span class="text-sm font-medium text-stone-700">Shopify</span>
+              </div>
+
+              <!-- Amazon -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-xl text-stone-600"
+                  style="font-family: 'Material Symbols Outlined' !important;">shopping_bag</span>
+                <span class="text-sm font-medium text-stone-700">Amazon</span>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-xl text-stone-600"
+                  style="font-family: 'Material Symbols Outlined' !important;">language</span>
+                <span class="text-sm font-medium text-stone-700">LinkedIn</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Visión -->
-    <section class="py-16 bg-stone-50">
+    <!-- Sección de contenido secundaria (layout gris) -->
+    <section class="section-padding bg-stone-50">
       <div class="container-max px-6">
-        </p>
-        <div class="bg-white rounded-2xl p-8 md:p-12 border border-stone-200 shadow-sm">
-          <blockquote class="text-2xl md:text-3xl font-bold text-stone-950 mb-6 leading-tight">
-            En Clairo no vendemos fórmulas mágicas
-          </blockquote>
-          <p class="text-lg text-stone-700 mb-6 leading-relaxed">
-            Trabajamos con empresas y emprendedores que quieren construir proyectos de verdad.
-          </p>
-        </div>
-      </div>
-      </div>
-    </section>
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-4">
+              Cómo trabajamos con <span class="text-[#5CAB94]">Clairo</span>
+            </h2>
+            <p class="text-lg text-stone-600 max-w-2xl mx-auto">
+              Nuestra metodología combina creatividad, estrategia y tecnología para construir proyectos de eCommerce con
+              propósito
+            </p>
+          </div>
+          <div class="w-full">
+            <!-- Layout de filas: imagen cuadrada + tarjeta rectangular -->
+            <div class="space-y-8">
+              <!-- Primera fila -->
+              <div class="grid grid-cols-3 gap-8 items-center">
+                <!-- Imagen cuadrada -->
+                <div class="col-span-1">
+                  <div class="bg-stone-800 rounded-2xl aspect-square flex items-center justify-center">
+                    <div class="text-center">
+                      <span class="material-symbols-outlined text-6xl text-[#5CAB94] block"
+                        style="font-family: 'Material Symbols Outlined' !important;">rocket_launch</span>
+                      <h3 class="text-lg font-semibold text-white mt-2">Clairo Academy</h3>
+                    </div>
+                  </div>
+                </div>
 
-    <!-- Cierre -->
-    <section class="py-16 bg-dark-radial-gradient text-white">
-      <div class="container-max px-6 text-center">
-        <div class="max-w-3xl mx-auto">
-          <p class="text-xl md:text-2xl text-white/90 mb-6 leading-relaxed">
-            Clairo existe para que dejes de adivinar, dejes de dudar y empieces a construir con intención, diseño y
-            dirección.
-          </p>
-          <p class="text-2xl md:text-3xl font-bold text-white leading-tight">
-            Porque el futuro del emprendimiento no es construir más rápido… es construir mejor.
-          </p>
-          <div class="flex flex-wrap gap-3 pt-4 justify-center">
-            <a href="#contactanos"
-              class="bg-[#5CAB94] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center gap-2 text-sm">
-              Contáctanos
-            </a>
+                <!-- Tarjeta de texto rectangular (doble ancho) -->
+                <div class="col-span-2">
+                  <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm h-full">
+                    <h3 class="text-2xl font-bold text-stone-950 mb-4">Formaciones con metodologías creativas</h3>
+                    <p class="text-stone-600 leading-relaxed mb-6">
+                      Combinamos el criterio humano con herramientas de inteligencia artificial, tanto en formatos
+                      online como presenciales. Fusionamos las mejores prácticas del ecosistema startup con el mundo del
+                      eCommerce.
+                    </p>
+                    <div class="space-y-3">
+                      <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-[#5CAB94]"
+                          style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                        <span class="text-stone-700">Aprendizaje práctico y aplicado</span>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-[#5CAB94]"
+                          style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                        <span class="text-stone-700">Enfoque creativo y estratégico</span>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-[#5CAB94]"
+                          style="font-family: 'Material Symbols Outlined' !important;">check_circle</span>
+                        <span class="text-stone-700">Resultados medibles y reales</span>
+                      </div>
+                    </div>
+                    <div class="mt-6">
+                      <a href="#"
+                        class="text-[#5CAB94] font-semibold hover:text-[#4a9a82] transition-colors inline-flex items-center gap-2">
+                        Ver más detalles
+                        <span class="material-symbols-outlined text-sm"
+                          style="font-family: 'Material Symbols Outlined' !important;">arrow_forward</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Segunda fila -->
+              <div class="grid grid-cols-3 gap-8 items-center">
+                <!-- Imagen cuadrada -->
+                <div class="col-span-1">
+                  <div class="bg-stone-800 rounded-2xl aspect-square flex items-center justify-center">
+                    <div class="text-center">
+                      <span class="material-symbols-outlined text-6xl text-[#93C5FD] block"
+                        style="font-family: 'Material Symbols Outlined' !important;">psychology</span>
+                      <h3 class="text-lg font-semibold text-white mt-2">Consultoría</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tarjeta de texto rectangular (doble ancho) -->
+                <div class="col-span-2">
+                  <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm h-full">
+                    <h3 class="text-2xl font-bold text-stone-950 mb-4">Programas de reconocimiento</h3>
+                    <p class="text-stone-600 mb-6 leading-relaxed">
+                      Nos hemos formado en los mejores programas de innovación y emprendimiento para ofrecer la máxima
+                      calidad en nuestros servicios y estar al día con las últimas tendencias del mercado.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                      <span class="bg-stone-100 px-4 py-2 rounded-lg text-sm font-medium text-stone-700">Wayra</span>
+                      <span class="bg-stone-100 px-4 py-2 rounded-lg text-sm font-medium text-stone-700">Madrid
+                        Innovation</span>
+                      <span class="bg-stone-100 px-4 py-2 rounded-lg text-sm font-medium text-stone-700">iLAB</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contactanos Section -->
-    <section id="contactanos" class="section-padding bg-stone-50">
-      <div class="container-max px-6">
-        <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-8">
-            Contáctanos
+    <!-- CTA final -->
+    <section class="section-padding bg-dark-radial-gradient text-white">
+      <div class="container-max px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            ¿Listo para construir con intención?
           </h2>
-          <p class="text-xl text-stone-600 mb-8">
-            ¿Tienes dudas sobre nuestros workshops o quieres saber cómo podemos ayudarte? Estamos aquí para responder.
+          <p class="text-xl text-white/80 mb-8 leading-relaxed">
+            Clairo existe para que dejes de adivinar, dejes de dudar y empieces a construir con intención, diseño y
+            dirección.
           </p>
-          <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm">
-            <div class="klaviyo-form-W6fWKU"></div>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="workshops.html"
+              class="bg-[#5CAB94] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center gap-2">
+              Ver formaciones
+            </a>
+            <a href="contacto.html"
+              class="px-8 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all inline-flex items-center gap-2">
+              Contáctanos
+            </a>
           </div>
         </div>
       </div>
@@ -275,16 +416,30 @@
         </div>
         <div>
           <h4 class="font-semibold text-white mb-4">Contacto</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="mailto:carlos.gonzalez@clairo.es"
-                class="hover:text-white transition-colors">carlos.gonzalez@clairo.es</a>
-            </li>
-            <li><a href="tel:+34625135358" class="hover:text-white transition-colors">+34 625 136 358</a></li>
-          </ul>
+          <div class="space-y-3">
+            <a href="contacto.html"
+              class="bg-[#5CAB94] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center justify-center gap-2 w-full text-sm">
+              <span class="material-symbols-outlined text-base"
+                style="font-family: 'Material Symbols Outlined' !important;">mail</span>
+              Contáctanos
+            </a>
+            <a href="mailto:carlos.gonzalez@clairo.es"
+              class="px-6 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 w-full text-sm">
+              <span class="material-symbols-outlined text-base"
+                style="font-family: 'Material Symbols Outlined' !important;">email</span>
+              carlos.gonzalez@clairo.es
+            </a>
+            <a href="tel:+34625135358"
+              class="px-6 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 w-full text-sm">
+              <span class="material-symbols-outlined text-base"
+                style="font-family: 'Material Symbols Outlined' !important;">phone</span>
+              +34 625 136 358
+            </a>
+          </div>
         </div>
       </div>
       <div class="border-t border-white/10 pt-8 text-center text-sm">
-        <p>© 2024 Clairo. Todos los derechos reservados.</p>
+        <p> 2024 Clairo. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
