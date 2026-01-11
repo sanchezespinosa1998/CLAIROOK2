@@ -248,12 +248,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #08090A;
+  background: #FFFFFF;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #5CAB94;
   border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a9a82;
 }
 
 /* Selección de texto personalizada - Verde */
